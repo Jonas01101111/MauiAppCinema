@@ -2,28 +2,29 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppCinema.MainPage"
-             BackgroundColor="Purple">
+             BackgroundColor="Purple"
+             >
 
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="Btncommon" TargetType="Button">
-                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
-                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
                 <Setter Property="FontSize" Value="25"/>
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="BackgroundColor" Value="Transparent"/>
                 <Setter Property="CornerRadius" Value="1"/>
                 <Setter Property="BorderColor" Value="Black"/>
                 <Setter Property="BorderWidth" Value="1"/>
-
             </Style>
         </ResourceDictionary>    
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <Grid RowDefinitions="*,*,*,*,*,*,*,*"
-              ColumnDefinitions="*,*"
-              RowSpacing="0.1" ColumnSpacing="0">
+        <Grid ColumnDefinitions="*,*"
+              RowDefinitions="*,*,*,*,*,*" 
+              RowSpacing="1 " ColumnSpacing="1"
+             >
 
             <Button Grid.Row="0" Grid.Column="0"
                 Style="{StaticResource Btncommon}"
