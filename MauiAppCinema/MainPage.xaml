@@ -21,6 +21,7 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
+        <ScrollView>
         <Grid ColumnDefinitions="*,*"
               RowDefinitions="*,*,*,*,*,*" 
               RowSpacing="1 " ColumnSpacing="1"
@@ -68,7 +69,7 @@
                 Style="{StaticResource Btncommon}"
                 x:Name="romance" Text="Romance" Clicked="romance_Clicked"/>
         </Grid>
-        
+        </ScrollView>
     </ContentPage.Content>
 
 </ContentPage>

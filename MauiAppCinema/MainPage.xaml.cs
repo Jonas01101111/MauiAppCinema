@@ -11,7 +11,10 @@
 
         private void aventura_Clicked(object sender, EventArgs e)
         {
-            
+            try
+            {
+                Nav
+            }
         }
 
         private void comedia_Clicked(object sender, EventArgs e)

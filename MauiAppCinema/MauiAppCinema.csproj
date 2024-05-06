@@ -63,13 +63,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="NewPage1.xaml.cs">
-	    <DependentUpon>NewPage1.xaml</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Update="NewPage1.xaml">
+	  <MauiXaml Update="categorias\Aventura\MainAventura.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

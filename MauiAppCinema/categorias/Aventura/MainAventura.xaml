@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppCinema.categorias.Aventura.MainAventura"
+             Title="MainAventura">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="iBtncommon" TargetType="ImageButton">
+                <Setter Property="HorizontalOptions" Value=""/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+                
+                
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="CornerRadius" Value="1"/>
+                <Setter Property="BorderColor" Value="Black"/>
+                <Setter Property="BorderWidth" Value="1"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid ColumnDefinitions="*,*"
+      RowDefinitions="*,* "
+      RowSpacing="1 " ColumnSpacing="1"
+              
+        >
+            <ImageButton Grid.Row="0" Grid.Column="0"
+            Style="{StaticResource iBtncommon}"
+            x:Name="filme1"  Clicked="filme1_Clicked"
+            Source="jumanji.jpg"
+            />
+            <ImageButton Grid.Row="0" Grid.Column="1"
+            Style="{StaticResource iBtncommon}"
+            x:Name="filme2"  Clicked="filme2_Clicked"
+            Source="interstellar.jpg"   />
+            <ImageButton Grid.Row="1" Grid.Column="0"
+            Style="{StaticResource iBtncommon}"
+            x:Name="filme3"  Clicked="filme3_Clicked"
+                         Source="aventura.png"/>
+            <ImageButton Grid.Row="1" Grid.Column="1"
+            Style="{StaticResource iBtncommon}"
+            x:Name="filme4" Clicked="filme4_Clicked"
+                         Source="aventura.png"/>
+
+
+
+
+
+        </Grid>
+
+
+
+
+    </ContentPage.Content>
+
+
+
+</ContentPage>
