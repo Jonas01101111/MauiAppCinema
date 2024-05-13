@@ -2,7 +2,7 @@
 {
     public partial class MainPage : ContentPage
     {
-        
+
 
         public MainPage()
         {
@@ -13,8 +13,15 @@
         {
             try
             {
-                Nav
+                Navigation.PushAsync(new categorias.Aventura.MainAventura());
+
             }
+            catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "OK");
+            }
+
+
         }
 
         private void comedia_Clicked(object sender, EventArgs e)
@@ -72,5 +79,4 @@
 
         }
     }
-
 }

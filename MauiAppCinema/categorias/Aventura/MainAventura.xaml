@@ -6,7 +6,7 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="iBtncommon" TargetType="ImageButton">
-                <Setter Property="HorizontalOptions" Value=""/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
                 <Setter Property="VerticalOptions" Value="Fill"/>
                 
                 
@@ -26,25 +26,21 @@
         >
             <ImageButton Grid.Row="0" Grid.Column="0"
             Style="{StaticResource iBtncommon}"
-            x:Name="filme1"  Clicked="filme1_Clicked"
+            x:Name="filme1a"  Clicked="filme1a_Clicked"
             Source="jumanji.jpg"
             />
             <ImageButton Grid.Row="0" Grid.Column="1"
             Style="{StaticResource iBtncommon}"
-            x:Name="filme2"  Clicked="filme2_Clicked"
+            x:Name="filme2a"  Clicked="filme2a_Clicked"
             Source="interstellar.jpg"   />
             <ImageButton Grid.Row="1" Grid.Column="0"
             Style="{StaticResource iBtncommon}"
-            x:Name="filme3"  Clicked="filme3_Clicked"
+            x:Name="filme3a"  Clicked="filme3a_Clicked"
                          Source="aventura.png"/>
             <ImageButton Grid.Row="1" Grid.Column="1"
             Style="{StaticResource iBtncommon}"
-            x:Name="filme4" Clicked="filme4_Clicked"
+            x:Name="filme4a" Clicked="filme4a_Clicked"
                          Source="aventura.png"/>
-
-
-
-
 
         </Grid>
 

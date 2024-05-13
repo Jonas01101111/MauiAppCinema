@@ -9,7 +9,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:categorias.Aventura.MainAventura}"
-        Route="MainAventura" />
-        <!--Mudar local e o route pra mudar a page q mostra-->
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+        
 </Shell>
