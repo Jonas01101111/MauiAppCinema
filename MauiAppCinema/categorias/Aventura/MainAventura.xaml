@@ -7,43 +7,54 @@
         <ResourceDictionary>
             <Style x:Key="iBtncommon" TargetType="ImageButton">
                 <Setter Property="HorizontalOptions" Value="Fill"/>
-                <Setter Property="VerticalOptions" Value="Fill"/>
-                
-                
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+
+
                 <Setter Property="BackgroundColor" Value="Transparent"/>
                 <Setter Property="CornerRadius" Value="1"/>
-                <Setter Property="BorderColor" Value="Black"/>
-                <Setter Property="BorderWidth" Value="1"/>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <Grid ColumnDefinitions="*,*"
-      RowDefinitions="*,* "
+        <ScrollView>
+            <Grid ColumnDefinitions="*,*"
+      RowDefinitions="50,*,*"
       RowSpacing="1 " ColumnSpacing="1"
-              
+  
         >
-            <ImageButton Grid.Row="0" Grid.Column="0"
+                <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                    x:Name="return" Text="Voltar" Clicked="return_Clicked"
+                        VerticalOptions="Fill"
+                        />
+
+
+                <ImageButton Grid.Row="1" Grid.Column="0"
             Style="{StaticResource iBtncommon}"
             x:Name="filme1a"  Clicked="filme1a_Clicked"
             Source="jumanji.jpg"
+            Aspect="AspectFill"
             />
-            <ImageButton Grid.Row="0" Grid.Column="1"
+                <ImageButton Grid.Row="1" Grid.Column="1"
             Style="{StaticResource iBtncommon}"
             x:Name="filme2a"  Clicked="filme2a_Clicked"
-            Source="interstellar.jpg"   />
-            <ImageButton Grid.Row="1" Grid.Column="0"
+            Source="interstellar.jpg"   
+            Aspect="AspectFill"/>
+
+                <ImageButton Grid.Row="2" Grid.Column="0"
             Style="{StaticResource iBtncommon}"
             x:Name="filme3a"  Clicked="filme3a_Clicked"
-                         Source="aventura.png"/>
-            <ImageButton Grid.Row="1" Grid.Column="1"
+            Source="aventura.png"
+            Aspect="AspectFill"/>
+
+                <ImageButton Grid.Row="2" Grid.Column="1"
             Style="{StaticResource iBtncommon}"
             x:Name="filme4a" Clicked="filme4a_Clicked"
-                         Source="aventura.png"/>
+            Source="aventura.png"
+            Aspect="AspectFill"/>
 
-        </Grid>
-
+            </Grid>
+        </ScrollView>
 
 
 
