@@ -4,7 +4,7 @@
              x:Class="MauiAppCinema.MainPage"
              BackgroundColor="Purple"
              >
-
+<!--Aos visitantes, deem uma estrelinha no meu github :D-->
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="Btncommon" TargetType="Button">
@@ -20,7 +20,7 @@
         </ResourceDictionary>    
     </ContentPage.Resources>
 
-    <ContentPage.Content>
+    <ContentPage.Content> 
         <ScrollView>
         <Grid ColumnDefinitions="*,*"
               RowDefinitions="*,*,*,*,*,*" 
