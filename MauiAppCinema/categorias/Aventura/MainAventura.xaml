@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppCinema.categorias.Aventura.MainAventura"
              >
-    <!--Aos visitantes, deem uma estrelinha no meu github :D-->
+    <!--Aos visitantes, deem uma estrelinha no meu github :D -->
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="iBtncommon" TargetType="ImageButton">
