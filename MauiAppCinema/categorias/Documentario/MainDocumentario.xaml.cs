@@ -6,4 +6,29 @@ public partial class MainDocumentario : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void filme1d_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void filme2d_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void filme3d_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void filme4d_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void return_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
