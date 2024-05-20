@@ -4,7 +4,8 @@
              x:Class="MauiAppCinema.MainPage"
              BackgroundColor="Purple"
              >
-<!--Aos visitantes, deem uma estrelinha no meu github :D -->
+<!--Aos visitantes, deem uma estrelinha no meu github :D 
+    feito por Jonas-->
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="Btncommon" TargetType="Button">
@@ -73,3 +74,57 @@
     </ContentPage.Content>
 
 </ContentPage>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--eu que fiz
+    assinado,Jonas-->

@@ -29,6 +29,14 @@ public partial class MainDocumentario : ContentPage
 
     private void return_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            Navigation.PushAsync(new MainPage());
 
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 }

@@ -2,11 +2,61 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppCinema.categorias.Drama.MainDrama"
-             Title="MainDrama">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="iBtncommon" TargetType="ImageButton">
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="CornerRadius" Value="1"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="50,*,*"
+                  RowSpacing="1 " ColumnSpacing="1"
+
+  >
+                <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                        x:Name="return" Text="Voltar" Clicked="return_Clicked"
+                        VerticalOptions="Fill"
+                  />
+
+
+                <ImageButton Grid.Row="1" Grid.Column="0"
+                             Style="{StaticResource iBtncommon}"
+                             x:Name="filme1dm"  Clicked="filme1dm_Clicked"
+                             Source="drama.png"
+                             Aspect="AspectFill"
+                />
+                <ImageButton Grid.Row="1" Grid.Column="1"
+                             Style="{StaticResource iBtncommon}"
+                             x:Name="filme2dm"  Clicked="filme2dm_Clicked"
+                             Source="drama.png"   
+                             Aspect="AspectFill"/>
+
+                <ImageButton Grid.Row="2" Grid.Column="0"
+                             Style="{StaticResource iBtncommon}"
+                             x:Name="filme3dm"  Clicked="filme3dm_Clicked"
+                             Source="drama.png"
+                             Aspect="AspectFill"/>
+
+                <ImageButton Grid.Row="2" Grid.Column="1"
+                             Style="{StaticResource iBtncommon}"
+                             x:Name="filme4dm" Clicked="filme4dm_Clicked"
+                             Source="drama.png"
+                             Aspect="AspectFill"/>
+
+            </Grid>
+        </ScrollView>
+
+
+
+    </ContentPage.Content>
+
+
 </ContentPage>
