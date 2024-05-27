@@ -32,7 +32,7 @@
                 <ImageButton Grid.Row="1" Grid.Column="0"
                             Style="{StaticResource iBtncommon}"
                             x:Name="filme1g"  Clicked="filme1g_Clicked"
-                            Source="guerra.png"
+                            Source="paremoataque.jpg"
                             Aspect="AspectFill"
       />
                 <ImageButton Grid.Row="1" Grid.Column="1"
