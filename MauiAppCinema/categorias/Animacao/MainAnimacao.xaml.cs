@@ -24,7 +24,14 @@ public partial class MainAnimacao : ContentPage
 
     private void filme1an_Clicked(object sender, EventArgs e)
     {
-
+        try
+        {
+            Navigation.PushAsync(new fAnim1());
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void return_Clicked(object sender, EventArgs e)
