@@ -3,10 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppCinema.categorias.Romance.fRoma1"
              Title="fRoma1">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+
+        <WebView Grid.Column="0" Grid.Row="0" 
+        Source="https://www.youtube.com/embed/shW9i6k8cB0?si=wvYWrXluyAJniVRm" />
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" 
+                   Source="decimetrosmorales.jpg" Aspect="AspectFit" HeightRequest="300" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                         Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento"
+                           Style="{StaticResource titulo}" />
+
+                    <Label Text="1 de junho de 2023"
+                           Style="{StaticResource textoTitulo}" />
+
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" 
+                       Style="{StaticResource titulo}" />
+                    <Label Text="Joaquim Dos Santos, Kemp Powers, Justin K. Thompson" 
+                       Style="{StaticResource textoTitulo}" />
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="1" 
+                         Grid.ColumnSpan="2">
+
+                    <Label Text="Sinopse" 
+                       Style="{StaticResource titulo}" />
+
+                    <Label x:Name="sinopse" Text="Homem-Aranha: Através do Aranhaverso, é a continuação do vencedor do Oscar Homem-Aranha: No Aranhaverso, de 2018, que acompanha Miles Morales (Shameik Moore), o simpático Homem-Aranha do Brooklyn. Neste novo capítulo, Miles está de volta para uma nova missão em sua agitada vida como super herói. No novo filme, Morales é transportado para uma aventura épica através do multiverso, e deve unir forças com a mulher-aranha Gwen Stacy (Hailee Steinfeld) e um novo time de Pessoas-Aranha, formado por heróis de diversas dimensões. No entanto, tudo muda quando os heróis entram em conflito sobre como lidar com uma nova ameaça, e Miles se vê em um impasse. E para piorar ainda mais a situação, eles precisam enfrentar um vilão muito mais poderoso do que qualquer coisa que já tenham encontrado antes. Agora, para salvar as pessoas que ele mais ama no mundo, Miles deve redefinir o que significa ser um super herói."
+                           FontSize="Medium" Padding="5"
+                       TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
 </ContentPage>
