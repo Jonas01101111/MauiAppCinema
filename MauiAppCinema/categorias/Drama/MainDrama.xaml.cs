@@ -9,7 +9,15 @@ public partial class MainDrama : ContentPage
 
     private void filme1dm_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            Navigation.PushAsync(new fDram1());
 
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void filme2dm_Clicked(object sender, EventArgs e)

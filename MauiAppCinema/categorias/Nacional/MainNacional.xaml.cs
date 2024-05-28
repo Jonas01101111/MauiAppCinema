@@ -24,7 +24,15 @@ public partial class MainNacional : ContentPage
 
     private void filme1n_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            Navigation.PushAsync(new fBR1());
 
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void filme2n_Clicked(object sender, EventArgs e)

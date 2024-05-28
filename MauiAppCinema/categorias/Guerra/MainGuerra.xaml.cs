@@ -22,7 +22,15 @@ public partial class MainGuerra : ContentPage
 
     private void filme1g_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            Navigation.PushAsync(new fWar1());
 
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void filme2g_Clicked(object sender, EventArgs e)

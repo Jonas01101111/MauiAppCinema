@@ -9,7 +9,15 @@ public partial class MainFiccao : ContentPage
 
     private void filme1f_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            Navigation.PushAsync(new fFic1());
 
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void filme2f_Clicked(object sender, EventArgs e)

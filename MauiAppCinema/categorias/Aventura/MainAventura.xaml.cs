@@ -9,7 +9,15 @@ public partial class MainAventura : ContentPage
 
     private void filme1a_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            Navigation.PushAsync(new fAven1());
 
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void filme2a_Clicked(object sender, EventArgs e)

@@ -9,7 +9,15 @@ public partial class MainDocumentario : ContentPage
 
     private void filme1d_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            Navigation.PushAsync(new fDoc1());
 
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void filme2d_Clicked(object sender, EventArgs e)

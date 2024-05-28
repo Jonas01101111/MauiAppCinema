@@ -22,7 +22,15 @@ public partial class MainTerror : ContentPage
 
     private void filme1t_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            Navigation.PushAsync(new fMedo1());
 
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void filme2t_Clicked(object sender, EventArgs e)

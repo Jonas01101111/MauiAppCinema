@@ -22,7 +22,15 @@ public partial class MainInfantil : ContentPage
 
     private void filme1i_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            Navigation.PushAsync(new fKid1());
 
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void filme2i_Clicked(object sender, EventArgs e)

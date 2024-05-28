@@ -22,7 +22,15 @@ public partial class MainRomance : ContentPage
 
     private void filme1r_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            Navigation.PushAsync(new fRoma1());
 
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void filme2r_Clicked(object sender, EventArgs e)

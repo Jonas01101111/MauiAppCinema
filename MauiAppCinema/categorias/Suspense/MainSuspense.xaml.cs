@@ -11,7 +11,7 @@ public partial class MainSuspense : ContentPage
     {
         try
         {
-            Navigation.PushAsync(new MainPage());
+            Navigation.PushAsync(new fSus1());
 
         }
         catch (Exception ex)
