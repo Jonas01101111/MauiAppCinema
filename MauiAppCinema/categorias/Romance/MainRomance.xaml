@@ -32,7 +32,7 @@ RowSpacing="1 " ColumnSpacing="1"
                 <ImageButton Grid.Row="1" Grid.Column="0"
       Style="{StaticResource iBtncommon}"
       x:Name="filme1r"  Clicked="filme1r_Clicked"
-      Source="romance.png"
+      Source="esquece.jpg"
       Aspect="AspectFill"
       />
                 <ImageButton Grid.Row="1" Grid.Column="1"

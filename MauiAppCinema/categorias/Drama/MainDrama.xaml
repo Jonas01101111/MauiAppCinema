@@ -30,7 +30,7 @@
                 <ImageButton Grid.Row="1" Grid.Column="0"
                              Style="{StaticResource iBtncommon}"
                              x:Name="filme1dm"  Clicked="filme1dm_Clicked"
-                             Source="drama.png"
+                             Source="oppie.jpg"
                              Aspect="AspectFill"
                 />
                 <ImageButton Grid.Row="1" Grid.Column="1"

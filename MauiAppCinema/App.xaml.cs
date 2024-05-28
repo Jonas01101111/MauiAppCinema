@@ -15,8 +15,8 @@ namespace MauiAppCinema
             IActivationState activationState)
         {
             var window = base.CreateWindow(activationState);
-            window.Width = 400;
-            window.Height = 600;
+            window.Width = 450;
+            window.Height = 800;
 
             return window;
         }
