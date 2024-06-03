@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppCinema.Menu"
+             >
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#6100EB" Offset="0.5"/>
+            <GradientStop Color="#6320C0" Offset="0.2"/>
+            <GradientStop Color="#4C366B" Offset="1.0"/>
+
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ini" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="40"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+
+    <VerticalStackLayout Margin="125">
+        <Button Text="Iniciar" x:Name="iniciar" Clicked="iniciar_Clicked" 
+                
+                Style="{StaticResource ini}"
+         
+            
+            />
+    </VerticalStackLayout>
+</ContentPage>
