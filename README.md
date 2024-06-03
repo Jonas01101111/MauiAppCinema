@@ -1,0 +1,2 @@
+-- O app possuí 12 categorias 
+-- coloquei apenas 12 :(
