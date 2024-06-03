@@ -11,7 +11,7 @@ public partial class MainSuspense : ContentPage
     {
         try
         {
-            Navigation.PushAsync(new fSus1());
+            Navigation.PushAsync(new MainPage());
 
         }
         catch (Exception ex)
@@ -22,7 +22,15 @@ public partial class MainSuspense : ContentPage
 
     private void filme1s_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            Navigation.PushAsync(new fSus1());
 
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void filme2s_Clicked(object sender, EventArgs e)
