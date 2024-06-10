@@ -1,2 +1,2 @@
 -- O app possuí 12 categorias 
--- coloquei apenas 12 :(
+-- coloquei apenas 12 filmes :(
